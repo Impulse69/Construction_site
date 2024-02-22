@@ -4,5 +4,8 @@
 body{
    font-family: "Flow Circular", system-ui;
    font-size: 40px;
-   color: rebeccapurple;
+   color: rgb(230, 226, 235);
+   background-image: url("images/mainbackground.png");
+   background-repeat: no-repeat;
+   background-size: auto;
 }
