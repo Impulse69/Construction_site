@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body{
+   color: rgb(230, 226, 235);
+   padding: 0;
+   margin: 0;  
+}
+
+.backgroundholder{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #36433C;
+}
+
+#backimg{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.textholder{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   background-color: rgba(0, 0, 0, 0.596);
+}
+
+.arrowdiv{
+   width: 100%;
+   margin-top: 40px;
+}
+
+#svgone{
+   transform: translate3d(-10rem,1rem,5rem);
+   margin-left: 90px;
+   animation: moveone 0.5s forwards;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+   opacity: 0;
+   transition: opacity 1s;
+}
+
+@keyframes moveone {
+   100%{
+      opacity: 1;
+      transform: translate3d(1rem,1rem,5rem);
+   }
+}
+
+#svgtwo{
+   transform: translate3d(10rem,-1rem,5rem);
+   animation: movein 0.5s forwards;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+   opacity: 0;
+   transition: opacity 1s;
+}
+
+@keyframes movein {
+   100%{
+      opacity: 1;
+      transform: translate3d(-1rem,-1rem,5rem);
+   }
+}
+
+.intromiddle{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+h1{
+   font-family: "Black Ops One", system-ui;
+   font-size: 30px;
+   text-align: center;
+   position: relative;
+   color: transparent;
+   animation: motiontxt 0.5s linear forwards;
+   animation-iteration-count: 1;
+   animation-delay: 0;
+   transition: font-size 0.5s linear;
+}
+
+@keyframes motiontxt {
+
+   30%{
+      font-size: 40px;
+      -webkit-text-stroke: 3px #89A86F;
+   }
+
+   60%{
+      font-size: 50px;
+      -webkit-text-stroke: 5px #89A86F;
+   }
+
+   100%{
+      font-size: 60px;
+       color: #89A86F;
+   }
+   
+}
+
+#motto{
+   color: white;
+   width: 100%;
+   font-family: "Acme", sans-serif;
+   font-size: 20px;
+   text-align: center;
+   margin-bottom: 40px;
+   opacity: 0;
+   transform: translate3d(0,-3rem,0);
+   animation: pullmotto 1s forwards;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+}
+
+@keyframes pullmotto {
+   100%{
+      opacity: 1;
+      font-size: 40px;
+      transform: translate3d(0,0,0);
+   }
+}
+
+button{
+   font-size: 25px;
+   font-family: "Black Ops One", system-ui;
+   border: 1px solid #89A86F;
+   border-radius: 40px;
+   background-color: transparent;
+   padding: 10px;
+   width: 300px;
+   color: #89A86F;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+   transition: font-size 0.5s linear,border 0.5s linear;
+}
+
+button:hover{
+   color: white;
+   font-size: 25px;
+   font-weight: 700;
+   border: 2px solid #89A86F;
+}
+
+button i{
+    margin: 5px;
+    transition: margin 0.5s linear;
+}
+
+button:hover i{
+    margin-left: 20px;
+}
+
+button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #36433C;
+  z-index: -1;
+}
+
+button:hover::before{
+  animation: motion 0.5s ease forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0;
+}
+
+@keyframes motion {
+    
+   100%{
+      width: 100%;
+   }
+
+}
+
+.introfooter{
+   height: 90px;
+   width: 100%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.introfooter div{
+    width: 30%;
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0,-5rem,0);
+    animation: foottxtpull 0.5s linear forwards;
+}
+
+.introfooter span{
+   font-family: "Acme", sans-serif;
+   width: 100%;
+   text-align: center;
+   color: #89A86F;
+   font-size: 20px;
+}
+
+
+@keyframes foottxtpull {
+   100%{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+   }
+}
+
+.socialmedia{
+   position: absolute;
+   right: 40px;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.socialmedia span{
+   color: #89A86F;
+   font-family: "Acme", sans-serif;
+     margin: 7px;
+     width: 40px;
+     height: 40px;
+     font-size: 20px;
+    border: 4px solid #89A86F;
+    border-radius: 100%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0,100px,0);
+    z-index: 1;
+    overflow: hidden;
+    transition: font-size 0.5s ease;
+}
+
+.socialmedia span:hover{
+   font-size: 25px;
+   color: white;
+}
+
+.socialmedia span:nth-child(1){
+   transform: translate3d(0,-70px,0);
+   animation: shiftup 1s forwards;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+}
+
+.socialmedia span:nth-child(2){
+   transform: translate3d(0,-70px,0);
+   animation: shiftdown 0.5s forwards;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+}
+
+.socialmedia span:nth-child(3){
+   transform: translate3d(0,-70px,0);
+   animation: shiftup 0.5s forwards;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+}
+
+.socialmedia span:nth-child(4){
+   transform: translate3d(0,-70px,0);
+   animation: shiftdown 1s forwards;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+}
+
+@keyframes shiftdown {
+   20%{
+      transform: translate3d(0,100px,0);
+   }
+   50%{
+      transform: translate3d(0,60px,0);
+   }
+   100%{
+      transform: translate3d(0,100px,0);
+   }
+}
+
+@keyframes shiftup {
+   20%{
+      transform: translate3d(0,60px,0);
+   }
+   50%{
+      transform: translate3d(0,100px,0);
+   }
+   100%{
+      transform: translate3d(0,60px,0);
+   }
+}
+
+.socialmedia span::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background-color: #36433C;
+   z-index: -1;
+}
+
+.socialmedia span:hover:after{
+   animation: socialmove 0.5s forwards;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+}
+
+@keyframes socialmove {
+   100%{
+      width: 100%;
+   }
+}

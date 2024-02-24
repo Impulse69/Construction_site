@@ -5,9 +5,49 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
 
-   <link rel="stylesheet" href="check.css">
+   <script src="https://kit.fontawesome.com/20d7e3a79f.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css_stylesheets/intropage.css">
 </head>
 <body>
-   
+    <section class="backgroundholder">
+        <!--  <img id="backimg" src="images/mainbackground.jpg" alt=""> -->
+    </section>
+
+    <section class="textholder">
+
+       <div class="arrowdiv">
+           <img id="svgone" src="/images/Subtractgreenarrow.svg" alt="" srcset="">
+           <img id="svgtwo" src="/images/Subtractwhitearrow.svg" alt="">
+       </div>
+
+       <div class="intromiddle">
+          <h1>PressCraft Trading & Logistics</h1>
+          <span id="motto">Xpress & Secure</span>
+          <button id="gohome">More Info<i class="fa-solid fa-arrow-right"></i></button>
+       </div>
+
+       <div class="introfooter">
+           <div><span><i class="fa-solid fa-check-double"></i> Customer Service</span></div>
+           <div><span><i class="fa-solid fa-check-double"></i> Awesome Designs</span></div>
+           <div><span><i class="fa-solid fa-check-double"></i> Efficiency</span></div>
+         </div>
+
+    </section>
+
+    <section class="socialmedia">
+        <span><i class="fa-brands fa-facebook"></i></span>
+        <span><i class="fa-brands fa-twitter"></i></span>
+        <span><i class="fa-brands fa-whatsapp"></i></span>
+        <span><i class="fa-brands fa-instagram"></i></span>
+    </section>
+
+    <script>
+        const button=document.getElementById("gohome");
+
+        button.addEventListener('click',()=>{
+            window.location.href="sitepages/HomePage/";
+        });
+    </script>
 </body>
+
 </html>
