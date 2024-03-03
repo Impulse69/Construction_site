@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-
+*{
+   -webkit-user-select: none;
+   user-select: none;
+}
 
 body{
    background-color: #36433C;
@@ -69,7 +71,9 @@ header{
 }
 
 .compname span{
-   font-family: "Black Ops One", system-ui;
+   font-family: "Madimi One", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
    color: #89A86F;
    transform: translate3d(0,-10rem,0);
    animation: fall 0.5s forwards;
@@ -104,9 +108,104 @@ header{
 
 .navbar ul li{
    list-style-type: none;
-   margin: 10px;
+   margin-right: 10px;
+   padding: 6px;
    color: #89A86F;
-   font-family: "Acme", sans-serif;
+   font-family: "JetBrains Mono", monospace;
    font-weight: 400;
-   font-size: 30px;
+   font-size: 16px;
+   cursor: pointer;
+   position: relative;
+   transition: font-size 0.5s linear;
+}
+
+.navbar ul li:hover{
+   font-size: 20px;
+   font-weight: 700;
+   -webkit-text-stroke: 1px white;
+}
+
+.navbar ul li::after{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   background-color: #89A86F;
+   transition: width 0.5s linear,height 0.5s linear;
+}
+
+.navbar ul li:hover:after{
+   width: 100%;
+   height: 5px;
+}
+
+
+.topsection{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   height: 350px;
+}
+
+#topone {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 45%;
+   margin: 1%;
+   font-size: 90px;
+   font-weight: 700;
+   font-family: "Madimi One", sans-serif;
+}
+
+/* morphtext */
+#topone #container {
+   position: relative;
+   width: 100%;
+   filter: url(#threshold) blur(0.3px);
+}
+
+#tiptxt{
+    color: white;
+    text-align: center;
+}
+
+#text1,
+#text2 {
+   position: absolute;
+   color: #89A86F;
+   font-size: 100px;
+}
+
+#toptwo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 45%;
+   margin: 1%;
+}
+
+#toptwo div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    position: relative;
+}
+
+#toptwo span{
+   position: absolute;
+   font-size: 0px;
+   opacity: 0;
+   margin-top: 100px;
+   transition: font-size 0.5s linear;
+   color: #89a86f48;
+}
+
+
+#toptwo span.active{
+    font-size: 300px;
+    opacity: 1;
 }

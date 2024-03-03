@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../../css_stylesheets/homepage.css">
-   <title>Document</title>
-</head>
-<body>
-     
-     <header>
-         <div class="svgdiv">
-            <img id="svgone" src="../../images/Subtractgreenarrow.svg" alt="" srcset="">
-            <img id="svgtwo" src="../../images/Subtractwhitearrow.svg" alt="" srcset="">
-         </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css_stylesheets/homepage.css" />
+    <title>Document</title>
 
-         <div class="compname">
-            <span>PressCraft Trading & logistics</span>
-         </div>
+    <script src="https://kit.fontawesome.com/20d7e3a79f.js" crossorigin="anonymous"></script>
 
-         <div class="navbar">
-             <nav>
-               <ul>
-                  <li>Home</li>
-                  <li>Contact</li>
-                  <li>About</li>
-               </ul>
-             </nav>
-         </div>
-      
-     </header>
+  </head>
+  <body>
+    <header>
+      <div class="svgdiv">
+        <img
+          id="svgone"
+          src="../../images/Subtractgreenarrow.svg"
+          alt=""
+          srcset=""
+        />
+        <img
+          id="svgtwo"
+          src="../../images/Subtractwhitearrow.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
 
-</body>
+      <div class="compname">
+        <span>PressCraft Trading & logistics</span>
+      </div>
+
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Works</li>
+            <li>About</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="topsection">
+      <div id="topone">
+        <div id="container">
+          <span id="tiptxt">Trust Us With All Your</span>
+          <br />
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+
+        <svg style="display: none" id="filters">
+          <defs>
+            <filter id="threshold">
+              <feColorMatrix
+                in="SourceGraphic"
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0 0 0 0 255 -140"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+
+      <div id="toptwo">
+         <div>
+          <span class="ico"><i class="fa-solid fa-print"></i></span>
+          <span class="ico"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+          <span class="ico"><i class="fa-solid fa-layer-group"></i></span>
+        </div>
+    </section>
+
+    <!--
+      <i class="fa-solid fa-truck-fast"></i>
+      <i class="fa-solid fa-handshake"></i>
+      <i class="fa-solid fa-envelope"></i>
+    -->
+
+    <script src="../../js_scripts/morphtxt.js"></script>
+  </body>
 </html>

@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
 
 body{
    color: rgb(230, 226, 235);
@@ -88,8 +87,10 @@ body{
 }
 
 h1{
-   font-family: "Black Ops One", system-ui;
-   font-size: 30px;
+   font-family: "Madimi One", sans-serif;
+   font-size: 50px;
+   font-weight: 700;
+   font-style: normal;
    text-align: center;
    position: relative;
    color: transparent;
@@ -121,7 +122,8 @@ h1{
 #motto{
    color: white;
    width: 100%;
-   font-family: "Acme", sans-serif;
+   font-family: "JetBrains Mono", monospace;
+   font-weight: 800;
    font-size: 20px;
    text-align: center;
    margin-bottom: 40px;
@@ -142,7 +144,7 @@ h1{
 
 button{
    font-size: 25px;
-   font-family: "Black Ops One", system-ui;
+   font-family: "Madimi One", sans-serif;
    border: 1px solid #89A86F;
    border-radius: 40px;
    background-color: transparent;
@@ -213,7 +215,7 @@ button:hover::before{
 }
 
 .introfooter span{
-   font-family: "Acme", sans-serif;
+   font-family: "JetBrains Mono", monospace;
    width: 100%;
    text-align: center;
    color: #89A86F;
@@ -238,13 +240,12 @@ button:hover::before{
 }
 
 .socialmedia span{
-   color: #89A86F;
-   font-family: "Acme", sans-serif;
+    color: #89A86F;
      margin: 7px;
      width: 40px;
      height: 40px;
      font-size: 20px;
-    border: 4px solid #89A86F;
+    border: 1px solid #89A86F;
     border-radius: 100%;
     padding: 7px;
     display: flex;
@@ -253,12 +254,13 @@ button:hover::before{
     transform: translate3d(0,100px,0);
     z-index: 1;
     overflow: hidden;
-    transition: font-size 0.5s ease;
+    transition: font-size 0.5s linear;
 }
 
 .socialmedia span:hover{
    font-size: 25px;
    color: white;
+   border: 2px solid white;
 }
 
 .socialmedia span:nth-child(1){
