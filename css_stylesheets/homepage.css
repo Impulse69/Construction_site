@@ -266,7 +266,6 @@ header{
    flex-wrap: wrap;
    width: 100%;
    padding: 10px;
-   margin-top: 150px;
    background-color: #89A86F;
    background-image: url('../images/service-bg.jpg');
    background-blend-mode: color-burn;
@@ -302,6 +301,7 @@ header{
    flex-wrap: wrap;
    width: 100%;
    padding: 10px;
+   margin-top: 150px;
    background-color: #ffffff;
    font-family: "Madimi One", sans-serif;
    background-image: url("../images/achievepane.jpg");
@@ -337,6 +337,5 @@ header{
 .showoff > div img{
    width: 400px;
    height: 450px;
-   margin-top: 20px;
-   mix-blend-mode:multiply;
+   margin: 2%;
 }
