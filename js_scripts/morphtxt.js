@@ -1,3 +1,4 @@
+
 const elts = {
     text1: document.getElementById("text1"),
     text2: document.getElementById("text2")
@@ -61,8 +62,10 @@ function animatespan() {
 
     let newTime = new Date();
     let shouldIncrementIndex = cooldown > 0;
-    let dt = (newTime - time) / 2000;
+    let dt = (newTime - time) / 2600;
     time = newTime;
+
+   
 
     cooldown -= dt;
 
@@ -80,27 +83,29 @@ function animatespan() {
 animatespan();
 
 
-var count=0;
-function animateico(){
-    setInterval(()=>{
-     const icon=[...document.getElementsByClassName("ico")];
+var index=1;
+const spanres=[...document.querySelectorAll(".spanres")];
 
-     for(var i=0;i<icon.length;i++){
-         icon[i].classList.remove("active");    
+    
+
+function animatespanres(){
+    setTimeout(()=>{
+
+     for(var t=0;t<spanres.length;t++){
+         spanres[t].classList.remove("active");    
      }
 
-     icon[count].classList.add("active");
+     spanres[index].classList.add("active");
 
-     if(count==icon.length-1){
-        count=0;
+     if(index==spanres.length-1){
+        index=0;
      }else{
-        count++;
+        index+=1;
      }
 
-     animateico();
-    },1000);
+     animatespanres();
 
-    animateico();
+    },3000);
 }
 
-animateico();
+animatespanres();
