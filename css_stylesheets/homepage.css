@@ -240,7 +240,7 @@ header{
    display: flex;
    justify-content: center;
    align-items: center;
-    position: relative;
+   position: relative;
 }
 
 #toptwo .spanres{
@@ -249,15 +249,13 @@ header{
    opacity: 0;
    margin-top: 100px;
    transition: font-size 0.5s linear;
-   color: #89a86f48;
+   color: #89a86fd7;
 }
-
 
 #toptwo .spanres.active{
     font-size: 300px;
     opacity: 1;
 }
-
 
 .middlesection{
    display: flex;
@@ -339,3 +337,108 @@ header{
    height: 450px;
    margin: 2%;
 }
+
+.links-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links-section div{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 10px;
+   color: white;
+}
+
+.links-section div{
+   background-color: #36433C;
+   background-image: url("../images/printer.jpeg");
+   background-size: 100% 100%;
+   background-blend-mode: color-burn;
+}
+
+.links-section div:nth-child(2){
+   background-color: #89A86F;
+   color: #36433C;
+   background-image: url("../images/service-bg.jpg");
+}
+
+
+.links-section div:nth-child(3){
+   background-color: #36433C;
+   background-image: url("../images/quest.jpg");
+}
+
+.links-section div span{
+   width: 100%;
+   text-align: center;
+   font-weight: 700;
+   font-size: 80px;
+   font-family: "Madimi One", sans-serif;
+   padding: 10px;
+}
+
+.links-section div span:nth-child(2){
+   font-size: 150px;
+}
+
+.links-section div button{
+   width: 400px;
+   margin: 20px;
+   border: none;
+   padding: 15px;
+   border-radius: 50px;
+   font-weight: 700;
+   font-size: 20px;
+   font-family: "JetBrains Mono", monospace;
+   color: white;
+   background-color: #36433C;
+   border: 1px solid white;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+}
+
+.links-section button:hover{
+   color: #36433C;
+}
+
+.links-section button i{
+   margin: 2px;
+   transition: margin 0.5s linear;
+}
+
+.links-section button:hover i{
+   margin-left: 10px;
+}
+
+.links-section button::before{
+ content: "";
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 0;
+ height: 100%;
+ background-color: white;
+ z-index: -1;
+}
+
+.links-section button:hover::before{
+ animation: motion 0.5s ease forwards;
+ animation-iteration-count: 1;
+ animation-delay: 0;
+}
+
+@keyframes motion {
+   
+  100%{
+     width: 100%;
+  }
+
+}
+
