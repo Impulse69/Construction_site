@@ -371,6 +371,12 @@ header{
 
 .links-section div:nth-child(3){
    background-color: #36433C;
+   background-image: url("../images/serviceimg.jpg");
+   background-blend-mode:hue;
+}
+
+.links-section div:nth-child(4){
+   background-color: #89A86F;
    background-image: url("../images/quest.jpg");
 }
 
@@ -435,10 +441,15 @@ header{
 }
 
 @keyframes motion {
-   
   100%{
      width: 100%;
   }
-
 }
 
+
+footer{
+   border-top: 4px solid #89A86F;
+   width: 100%;
+   background-color: #36433C;
+   padding: 20px;
+}
