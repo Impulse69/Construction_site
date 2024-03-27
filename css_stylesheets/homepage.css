@@ -86,7 +86,6 @@ header{
    }
 }
 
-
 .compname{
    display: flex;
    justify-content: center;
@@ -194,10 +193,13 @@ header{
    width: 100%;
    margin-top: 20px;
    padding: 10px;
-   height: 350px;
+   background-color: #36433C;
+   background-image: url("../images/designstarback.png");
+   background-size: cover;
+   background-blend-mode: color-burn;
 }
 
-#topone {
+.topone {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -209,26 +211,42 @@ header{
    font-family: "Madimi One", sans-serif;
 }
 
-/* morphtext */
-#topone #container {
-   position: relative;
-   width: 100%;
-   filter: url(#threshold) blur(0.3px);
-}
-
-#tiptxt{
+.topone #tiptxt{
     color: white;
    -webkit-text-stroke: 3px #ffffff;
 }
 
-#text1,
-#text2 {
-   position: absolute;
-   color: #89A86F;
-   font-size: 100px;
+.topone .containerwrapper{
+   width: 100%;
+   position: relative;
 }
 
-#toptwo{
+.topone .containerwrapper #container {
+   width: 100%;
+   height: 100px;
+   margin: 20px;
+   color: #89A86F;
+   font-size: 100px;
+   font-weight: 700;
+   font-family: "Madimi One", sans-serif;
+   overflow: auto;
+}
+
+.animtext{
+   position: absolute;
+   top: 0;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+}
+
+.animtext.active{
+   text-align: left;
+   display: block;
+   opacity: 1;
+   
+}
+
+.toptwo{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -236,23 +254,22 @@ header{
    margin: 1%;
 }
 
-#toptwo div{
+.toptwo div{
    display: flex;
    justify-content: center;
    align-items: center;
    position: relative;
 }
 
-#toptwo .spanres{
+.toptwo .spanres{
    position: absolute;
    font-size: 0px;
    opacity: 0;
-   margin-top: 100px;
-   transition: font-size 0.5s linear;
+   transition: font-size 1s ease-in-out;
    color: #89a86fd7;
 }
 
-#toptwo .spanres.active{
+.toptwo .spanres.active{
     font-size: 300px;
     opacity: 1;
 }
@@ -299,7 +316,6 @@ header{
    flex-wrap: wrap;
    width: 100%;
    padding: 10px;
-   margin-top: 150px;
    background-color: #ffffff;
    font-family: "Madimi One", sans-serif;
    background-image: url("../images/achievepane.jpg");
@@ -357,8 +373,8 @@ header{
 
 .links-section div{
    background-color: #36433C;
-   background-image: url("../images/printer.jpeg");
-   background-size: 100% 100%;
+   background-image: url("../images/designstarback.png");
+   background-size: cover;
    background-blend-mode: color-burn;
 }
 
@@ -371,13 +387,14 @@ header{
 
 .links-section div:nth-child(3){
    background-color: #36433C;
-   background-image: url("../images/serviceimg.jpg");
-   background-blend-mode:hue;
+   background-image: url("../images/designstarback.png");
+   background-blend-mode:color-burn;
 }
 
 .links-section div:nth-child(4){
    background-color: #89A86F;
-   background-image: url("../images/quest.jpg");
+   color: #36433C;
+   background-image: url("../images/service-bg.jpg");
 }
 
 .links-section div span{
@@ -404,7 +421,7 @@ header{
    font-family: "JetBrains Mono", monospace;
    color: white;
    background-color: #36433C;
-   border: 1px solid white;
+   border: 2px solid white;
    position: relative;
    overflow: hidden;
    z-index: 1;
@@ -415,6 +432,7 @@ header{
 }
 
 .links-section button i{
+   font-size: 25px;
    margin: 2px;
    transition: margin 0.5s linear;
 }
@@ -451,5 +469,118 @@ footer{
    border-top: 4px solid #89A86F;
    width: 100%;
    background-color: #36433C;
-   padding: 20px;
+   padding: 30px;
+   font-family: "JetBrains Mono", monospace;
+   background-image: url("/images/designstarback.png");
+   background-size: cover;
+   background-blend-mode: color-burn;
+}
+
+footer .footarea{
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+
+.logoside{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   width: 20%;
+}
+
+#firstlogo{
+   width: 50px;
+   height: 50px;
+   transform: translate3d(1rem,1rem,5rem);
+}
+
+#secondlogo{
+   width: 50px;
+   height: 50px;
+   transform: translate3d(-1rem,-1rem,5rem);
+}
+
+
+.copyright{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   color: white;
+   font-size: 30px;
+   font-family: "JetBrains Mono", monospace;
+   font-weight: 700;
+   width: 40%;
+}
+
+.copyright span{
+   width: 100%;
+}
+
+.copyright hr{
+   height: 4px;
+   width: 100%; 
+   border: 4px solid white;
+   border-radius: 50px;
+   background-color: rgb(255, 255, 255);
+}
+
+.copyright a{
+   width: 100%;
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+}
+
+.copyright a i{
+   margin-right:5px;
+   transition: margin-right 0.5s ease;
+}
+
+.copyright a:hover i{
+   margin-right:10px;
+}
+
+.socials{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   color: white;
+   font-size: 30px;
+   font-family: "JetBrains Mono", monospace;
+   font-weight: 700;
+   width: 40%;
+   text-align: center;
+}
+
+.socials span{
+   width: 100%;
+}
+
+.socials div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.socials div a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 60px;
+   height: 60px;
+   margin: 10px;
+   border: 3px solid white;
+   border-radius: 100%;
+   text-decoration: none;
+   color: white;
+   font-size: 22px;
+   transition: font-size 0.5s ease;
+}
+
+.socials div a:hover{
+    font-size: 27px;
 }

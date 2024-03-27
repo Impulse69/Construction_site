@@ -35,39 +35,31 @@
       <div class="navbar">
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Gallery</li>
-            <li>Contact</li>
-            <li>Services</li>
-            <li>About</li>
+            <li class="homepage">Home</li>
+            <li class="gallerypage">Gallery</li>
+            <li class="contactpage">Contact</li>
+            <li class="servicepage">Services</li>
+            <li class="aboutpage">About</li>
           </ul>
         </nav>
       </div>
     </header>
 
     <section class="topsection">
-      <div id="topone">
+      <div class="topone">
         <span id="tiptxt">Trust Us With All Your</span>
 
+      <div class="containerwrapper">
         <div id="container">
-          <span id="text1"></span>
-          <span id="text2"></span>
+          <span class="animtext active">Print Works</span>
+          <span class="animtext">Design works</span>
+          <span class="animtext">Logistics</span>
         </div>
-
-        <svg style="display: none" id="filters">
-          <defs>
-            <filter id="threshold">
-              <feColorMatrix
-                in="SourceGraphic"
-                type="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0 0 0 0 255 -140"
-              />
-            </filter>
-          </defs>
-        </svg>
       </div>
 
-      <div id="toptwo">
+      </div>
+
+      <div class="toptwo">
         <div>
           <span class="spanres active"><i class="fa-solid fa-print"></i></span>
           <span class="spanres"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
@@ -76,11 +68,11 @@
       </div>
     </section>
 
+    
     <section class="showoff">
 
       <span id="toptxt"><i class="fa-solid fa-trophy"></i> Achievements</span>
       
-
       <div>
           <span>Recognized By Ghana Business Awards</span>
           <img src="../../images/awardlogo.png" alt="">
@@ -142,12 +134,49 @@
 
     <footer>
         <section class="footarea">
-            <div></div>
-            <div></div>
+
+          <div class="logoside">
+            <img
+              id="firstlogo"
+              src="../../images/Subtractgreenarrow.svg"
+              alt=""
+              srcset=""
+            />
+            <img
+              id="secondlogo"
+              src="../../images/Subtractwhitearrow.svg"
+              alt=""
+              srcset=""
+            />
+          </div>
+            
+          <div class="copyright">
+              <span>SiteLinks</span>
+              <a href="/"><i class="fa-solid fa-circle-chevron-right"></i>Home</a>
+              <a href="/gallery"><i class="fa-solid fa-circle-chevron-right"></i>Gallery</a>
+              <a href="/contact"><i class="fa-solid fa-circle-chevron-right"></i>Contact</a>
+              <a href="/services"><i class="fa-solid fa-circle-chevron-right"></i>Services</a>
+              <a href="/about"><i class="fa-solid fa-circle-chevron-right"></i>About</a>
+              <hr />
+              <span><i style="margin-right: 10px;" class="fa-regular fa-copyright"></i>CopyRight 2024</span>
+          </div>
+
+          <div class="socials">
+            <span>Follow Us On</span>
+             
+            <div>
+               <a href=""><i class="fa-brands fa-facebook"></i></a>
+               <a href=""><i class="fa-brands fa-twitter"></i></a>
+               <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+               <a href=""><i class="fa-brands fa-instagram"></i></a>
+             </div>
+
+          </div>
+
         </section>
     </footer>
      
 
-    <script src="../../js_scripts/morphtxt.js"></script>
+    <script src="../../js_scripts/homepage.js"></script>
   </body>
 </html>
