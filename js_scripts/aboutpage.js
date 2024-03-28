@@ -16,3 +16,10 @@ changepage(gallerypage,"GalleryPage");
 changepage(contactpage,"ContactPage");
 changepage(servicepage,"ServicePage");
 changepage(aboutpage,"AboutPage");
+
+
+const navigation = document.querySelector(".navigation");
+
+ window.addEventListener("scroll",()=>{
+       navigation.classList.toggle("sticky",window.scrollY > 0);
+ });

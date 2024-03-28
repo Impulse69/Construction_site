@@ -1,0 +1,70 @@
+
+
+@import url(/css_stylesheets/generalcss.css);
+
+.description-typeone{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 10px;
+   padding: 10px;
+   background-color: #36433C;
+   background-image: url("/images/designstarback.png");
+   background-size: cover;
+   background-blend-mode: color-burn;
+}
+
+.description-typeone h2{
+   width: 100%;
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+   font-family: "Madimi One", sans-serif;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.description-typeone span{
+    width: 100%;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 40px;
+    color: #89A86F;
+    margin-bottom: 50px;
+}
+
+
+.description-typetwo{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 10px;
+   padding: 10px;
+   background-color: #89A86F;
+   background-image: url("/images/service-bg.jpg");
+   background-size: cover;
+   background-blend-mode: color-burn;
+}
+
+.description-typetwo h2{
+   width: 100%;
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+   font-family: "Madimi One", sans-serif;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.description-typetwo span{
+    width: 100%;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 40px;
+    color: #36433C;
+    margin-bottom: 50px;
+}

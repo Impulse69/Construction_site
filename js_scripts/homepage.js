@@ -18,6 +18,13 @@ changepage(servicepage,"ServicePage");
 changepage(aboutpage,"AboutPage");
 
 
+const navigation = document.querySelector(".navigation");
+
+ window.addEventListener("scroll",()=>{
+       navigation.classList.toggle("sticky",window.scrollY > 0);
+ });
+
+
 
 var index=1;
 const animtext=[...document.querySelectorAll(".animtext")];
