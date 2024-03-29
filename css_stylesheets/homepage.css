@@ -1,5 +1,5 @@
 
-@import url(/css_stylesheets/generalcss.css);
+@import url("generalcss.css");
 
 .topsection{
    display: flex;
