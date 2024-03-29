@@ -1,5 +1,4 @@
 
-
 @import url(/css_stylesheets/generalcss.css);
 
 .description-typeone{
@@ -13,6 +12,7 @@
    background-image: url("/images/designstarback.png");
    background-size: cover;
    background-blend-mode: color-burn;
+   text-shadow: 0px 0px 30px #36433C;
 }
 
 .description-typeone h2{
@@ -35,10 +35,22 @@
 }
 
 .description-typeone span i{
-   font-size: 100px;
-   color: #89A86F;
+      font-size: 100px;
+      color: #89A86F;
 }
 
+.description-typeone.exception{
+   color: #36433C;
+   background-color: #ffffff;
+   background-image: url("/images/achievepane.jpg");
+   background-size: cover;
+   background-blend-mode: luminosity;
+}
+
+.description-typeone.exception h2 , .description-typeone.exception span, .description-typeone.exception i{
+   color: #36433C;
+   text-shadow: 0px 0px 3px #36433C;
+}
 
 .description-typetwo{
    width: 100%;
@@ -51,6 +63,7 @@
    background-image: url("/images/service-bg.jpg");
    background-size: cover;
    background-blend-mode: color-burn;
+   text-shadow: 0px 0px 30px #89A86F;
 }
 
 .description-typetwo h2{

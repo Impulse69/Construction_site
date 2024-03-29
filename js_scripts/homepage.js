@@ -12,7 +12,7 @@ function changepage(button,loc){
 }
 
 changepage(homepage,"HomePage");
-changepage(gallerypage,"GalleryPage");
+changepage(gallerypage,"ReasonPage");
 changepage(contactpage,"ContactPage");
 changepage(servicepage,"ServicePage");
 changepage(aboutpage,"AboutPage");
