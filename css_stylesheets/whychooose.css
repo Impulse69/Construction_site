@@ -10,7 +10,7 @@
    flex-wrap: wrap;
    padding: 10px;
    background-color: #36433C;
-   background-image: url("/images/designstarback.png");
+   background-image: url("../images/designstarback.png");
    background-size: cover;
    background-blend-mode: color-burn;
    text-shadow: 0px 0px 30px #36433C;
@@ -43,7 +43,7 @@
 .description-typeone.exception{
    color: #36433C;
    background-color: #ffffff;
-   background-image: url("/images/achievepane.jpg");
+   background-image: url("../images/achievepane.jpg");
    background-size: cover;
    background-blend-mode: luminosity;
 }
@@ -61,7 +61,7 @@
    flex-wrap: wrap;
    padding: 10px;
    background-color: #89A86F;
-   background-image: url("/images/service-bg.jpg");
+   background-image: url("../images/service-bg.jpg");
    background-size: cover;
    background-blend-mode: color-burn;
    text-shadow: 0px 0px 30px #89A86F;

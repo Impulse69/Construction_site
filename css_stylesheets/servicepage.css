@@ -10,7 +10,7 @@
    flex-wrap: wrap;
    padding: 10px;
    background-color: #36433C;
-   background-image: url("/images/designstarback.png");
+   background-image: url("../images/designstarback.png");
    background-size: cover;
    background-blend-mode: color-burn;
 }
@@ -48,7 +48,7 @@
    flex-wrap: wrap;
    padding: 10px;
    background-color: #89A86F;
-   background-image: url("/images/service-bg.jpg");
+   background-image: url("../images/service-bg.jpg");
    background-size: cover;
    background-blend-mode: color-burn;
 }
