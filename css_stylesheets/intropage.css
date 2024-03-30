@@ -36,9 +36,8 @@ body{
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   backdrop-filter: blur(10px);
-   -webkit-backdrop-filter: blur(10px);
-   background-color: rgba(0, 0, 0, 0.596);
+  
+   background-color: rgba(0, 0, 0, 0.824);
 }
 
 .arrowdiv{
@@ -94,6 +93,7 @@ h1{
    text-align: center;
    position: relative;
    color: transparent;
+   text-shadow: 0px 0px 100px #89A86F;
    animation: motiontxt 0.5s linear forwards;
    animation-iteration-count: 1;
    animation-delay: 0;
