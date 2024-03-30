@@ -1,0 +1,134 @@
+
+
+@import url("generalcss.css");
+
+
+.locationdisplay{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 30px;
+   font-family: "Madimi One", sans-serif;
+   background-color: #36433C;
+   background-image: url("../images/designstarback.png");
+   background-size: cover;
+   background-blend-mode: color-burn;
+}
+
+.locationdisplay span{
+   font-size: 40px;
+   color: #ffffff;
+}
+
+.locationdisplay span i{
+   font-size: 80px;
+}
+
+.displaymap{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.displaymap #map{
+   width: 100%;
+   height: 500px;
+}
+
+.description-typeone{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 10px;
+   background-color: #36433C;
+   background-image: url("../images/designstarback.png");
+   background-size: cover;
+   background-blend-mode: color-burn;
+}
+
+.description-typeone h2{
+   width: 100%;
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+   font-family: "Madimi One", sans-serif;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.description-typeone span{
+    width: 100%;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 90px;
+    color: #89A86F;
+    margin-bottom: 50px;
+}
+
+.description-typeone span i{
+   font-size: 100px;
+   color: #89A86F;
+}
+
+.description-typeone span a{
+   font-size: 90px;
+   text-decoration: none;
+   color: #89A86F;
+}
+
+.description-typeone span a:hover{
+   text-decoration: underline;
+}
+
+
+.description-typetwo{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 10px;
+   background-color: #89A86F;
+   background-image: url("../images/service-bg.jpg");
+   background-size: cover;
+   background-blend-mode: color-burn;
+}
+
+.description-typetwo h2{
+   width: 100%;
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+   font-family: "Madimi One", sans-serif;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.description-typetwo span{
+    width: 100%;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 40px;
+    color: #36433C;
+    margin-bottom: 50px;
+}
+
+.description-typetwo span i{
+   font-size: 100px;
+   color: #36433C;
+}
+
+.description-typetwo span a{
+   font-size: 90px;
+   text-decoration: none;
+   color: #36433C;
+}
+
+.description-typetwo span a:hover{
+   text-decoration: underline;
+}
