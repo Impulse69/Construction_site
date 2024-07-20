@@ -36,11 +36,13 @@ body{
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-  
    background-color: rgba(0, 0, 0, 0.824);
 }
 
-.arrowdiv{
+.topedge{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
    width: 100%;
    margin-top: 40px;
 }
@@ -79,19 +81,14 @@ body{
 }
 
 .intromiddle{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
+   display: block;
+   text-align: center;
 }
 
 h1{
    font-family: "Madimi One", sans-serif;
    font-size: 50px;
    font-weight: 700;
-   font-style: normal;
-   text-align: center;
-   position: relative;
    color: transparent;
    text-shadow: 0px 0px 100px #89A86F;
    animation: motiontxt 0.5s linear forwards;
@@ -120,6 +117,7 @@ h1{
 }
 
 #motto{
+   display: block;
    color: white;
    width: 100%;
    font-family: "JetBrains Mono", monospace;
@@ -128,7 +126,7 @@ h1{
    text-align: center;
    margin-bottom: 40px;
    opacity: 0;
-   transform: translate3d(0,-3rem,0);
+   transform: translate3d(0,-7rem,0);
    animation: pullmotto 1s forwards;
    animation-delay: 0;
    animation-iteration-count: 1;
@@ -146,7 +144,7 @@ button{
    font-size: 25px;
    font-family: "Madimi One", sans-serif;
    border: 1px solid #89A86F;
-   border-radius: 40px;
+   border-radius: 50px;
    background-color: transparent;
    padding: 10px;
    width: 300px;
@@ -223,7 +221,6 @@ button:hover::before{
    font-size: 20px;
 }
 
-
 @keyframes foottxtpull {
    100%{
         opacity: 1;
@@ -232,17 +229,15 @@ button:hover::before{
 }
 
 .socialmedia{
-   position: absolute;
-   right: 40px;
-   top: 0;
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-right: 30px;
 }
 
 .socialmedia span{
     color: #89A86F;
-     margin: 7px;
+     margin: 1px;
      width: 40px;
      height: 40px;
      font-size: 20px;
@@ -281,39 +276,39 @@ button:hover::before{
 
 .socialmedia span:nth-child(3){
    transform: translate3d(0,-70px,0);
-   animation: shiftup 0.5s forwards;
+   animation: shiftup 1s forwards;
    animation-delay: 0;
    animation-iteration-count: 1;
 }
 
 .socialmedia span:nth-child(4){
    transform: translate3d(0,-70px,0);
-   animation: shiftdown 1s forwards;
+   animation: shiftdown 0.5s forwards;
    animation-delay: 0;
    animation-iteration-count: 1;
 }
 
 @keyframes shiftdown {
    20%{
-      transform: translate3d(0,100px,0);
+      transform: translate3d(0,-50px,0);
    }
    50%{
-      transform: translate3d(0,60px,0);
+      transform: translate3d(0,50px,0);
    }
    100%{
-      transform: translate3d(0,100px,0);
+      transform: translate3d(0,20px,0);
    }
 }
 
 @keyframes shiftup {
    20%{
-      transform: translate3d(0,60px,0);
+      transform: translate3d(0,-50px,0);
    }
    50%{
-      transform: translate3d(0,100px,0);
+      transform: translate3d(0,50px,0);
    }
    100%{
-      transform: translate3d(0,60px,0);
+      transform: translate3d(0,-20px,0);
    }
 }
 
@@ -328,8 +323,7 @@ button:hover::before{
 }
 
 .socialmedia span:hover:after{
-   animation: socialmove 0.5s forwards;
-   animation-delay: 0;
+   animation: socialmove 0.5s linear;
    animation-iteration-count: 1;
 }
 
